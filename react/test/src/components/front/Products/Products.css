@@ -1,0 +1,78 @@
+/* 原本是圖片跟頁首目錄完全沒有對齊 */
+
+/* 所有商品直排對齊 */
+.products {
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: black;
+    border-radius: 5px;
+}
+
+/* 商品被放置在一張一張的卡片裡面 並且排列整齊 */
+.card {
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 40px 20px;
+    background-color: white;
+}
+
+/* 讓每張卡片裡面的資訊都調整成相同且適當的比例 */
+.product-image {
+    width: 100%;
+    max-width: 300px;
+    min-height: 300px;
+    display: block;
+    object-fit: cover;
+}
+
+/* 調整商品名稱的規格 都變成大寫 */
+.product-name {
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+
+/* 調整商品價格規格 */
+.product-price {
+    margin: 10px 0px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* 調整按鈕規格 */
+.product-add-button {
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(87, 21, 202);
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 15px auto;
+}
+
+
+/* hover的意思是盤旋的意思 就是如果你在按鈕上面盤旋的話 
+   就會變換顏色 */
+.product-add-button:hover {
+    background-color: red;
+}
+
+
+/* 按下按鈕後有一種動態的感覺 好像有回彈的feel */
+.product-add-button:active {
+    transform: translateY(2px);
+}

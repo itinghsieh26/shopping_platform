@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.8.2",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^3.1.1"
+  }
+}
